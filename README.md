@@ -21,3 +21,18 @@ I needed to check how the `Cache-Control` header works with a simple Spring Boot
 7. Do the same thing as the previous step (5) after 2 minutes
 
 8. Notice that the list of bikes has been updated now (the cache was invalidated)
+
+## What I learnt 
+
+1. This type of caching might be influenced by the browser, and the specific mechanics we have 
+
+2. We might be able to get away with this sort of caching in web-apps that don't refresh for example, [SPA](https://en.wikipedia.org/wiki/Single-page_application) based web-applications
+
+3. There might be no way to know if content was loaded from the browser cache or a new server request was made. Need to learn about this, as this will enable showing messages on the UI like "this content could be outdated, click [here]() to refresh" 
+
+# Next steps 
+
+1. Simulate a SPA environment, and see if the caching can work seamlessly. 
+
+2. Understand how different browsers use the `Cache-Control` header. When would they choose to ignore it?
+
