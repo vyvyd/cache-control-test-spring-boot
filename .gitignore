@@ -80,5 +80,8 @@ gradle-app.setting
 # JDT-specific (Eclipse Java Development Tools)
 .classpath
 
+# Idea 
+frontend/.idea/**
+
 # End of https://www.toptal.com/developers/gitignore/api/react,kotlin,java,gradle
 
