@@ -22,11 +22,17 @@ I needed to check how the `Cache-Control` header works with a simple Spring Boot
 
 8. Notice that the list of bikes has been updated now (the cache was invalidated)
 
+## Technical details
+
+All that needed to be done was to introduce cache-control in the response at the backend. This change is at
+
+https://github.com/vyvyd/cache-control-test-spring-boot/blob/2481cc8/backend/src/main/kotlin/com/caching/example/ListOfBikesController.kt#L26
+
 ## What I learnt 
 
-1. This type of caching might be influenced by the browser, and the specific mechanics we have 
+1. This type of caching might be influenced by the browser, and the specific mechanics it has
 
-2. We might be able to get away with this sort of caching in web-apps that don't refresh for example, [SPA](https://en.wikipedia.org/wiki/Single-page_application) based web-applications
+2. We might be able to get away with this sort of caching in web-apps that don't refresh the page for example, applications designed as [SPA](https://en.wikipedia.org/wiki/Single-page_application) 
 
 3. There might be no way to know if content was loaded from the browser cache or a new server request was made. Need to learn about this, as this will enable showing messages on the UI like "this content could be outdated, click [here]() to refresh" 
 
