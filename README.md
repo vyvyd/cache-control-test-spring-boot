@@ -2,7 +2,7 @@
 
 ## Why 
 
-I needed to check how the `Cache-Control` header works with a simple Spring Boot app in the backend and a React App in the frontend. 
+I needed to check how the `Cache-Control` with `max-age` header works with a simple Spring Boot app in the backend and a React App in the frontend. 
 
 ## How to use 
 
